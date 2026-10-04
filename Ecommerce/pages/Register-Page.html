@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account - ThinkMart</title>
+    <meta name="description" content="Create a new ThinkMart account to enjoy fast shopping, order tracking, and exclusive discounts.">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/075/744/712/small_2x/mart-shopping-cart-logo-with-price-tag-and-shopping-trolley-icon-combination-white-icon-on-purple-background-retail-store-branding-online-shopping-business-logo-vector.jpg">
+    <link rel="stylesheet" href="../style/site.css">
+</head>
+
+<body>
+
+    <!-- Demo Notice Top Banner -->
+    <div class="demo-banner">
+        <strong>FRONTEND DEMO</strong> Static College Project • Registration is simulated for display only.
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <a href="./Home-Page.html" class="brand" aria-label="ThinkMart Home Page">
+            <div class="brand-mark">T</div>
+            <div>
+                Think<span class="brand-accent">Mart</span>
+                <small>INDIAN TECH STORE</small>
+            </div>
+        </a>
+
+        <form class="header-search-form" aria-label="Search Products">
+            <input type="search" placeholder="Search electronics, laptops, phones..." aria-label="Search">
+            <button type="submit" aria-label="Submit Search">🔍</button>
+        </form>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+            <a href="./Home-Page.html">Home</a>
+            <a href="./Products.html">Products</a>
+            <a href="./Cart.html">Cart <span class="cart-count">0</span></a>
+            <a href="./About.html">About</a>
+            <a href="./Contact.html">Contact</a>
+            <a href="./Login.html" class="nav-login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Registration Section -->
+    <main class="page-wrap" style="display: grid; place-items: center;">
+        <div class="auth-container" style="max-width: 480px;">
+            <div class="auth-card">
+                <div style="text-align: center; margin-bottom: 24px;">
+                    <div class="brand-mark" style="margin: 0 auto 12px; width: 50px; height: 50px; font-size: 26px;">T</div>
+                    <h1 style="font-size: 26px; font-weight: 800;">Create ThinkMart Account</h1>
+                    <p style="color: var(--muted); font-size: 13px; margin-top: 4px;">Join thousands of tech shoppers across India</p>
+                </div>
+
+                <form id="thinkmart-register-form" novalidate>
+                    <div class="form-group">
+                        <label for="reg-fullname">Full Name <span style="color: var(--red);">*</span></label>
+                        <input type="text" id="reg-fullname" placeholder="e.g. Rahul Sharma" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-email">Email Address <span style="color: var(--red);">*</span></label>
+                        <input type="email" id="reg-email" placeholder="rahul@example.com" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-phone">Phone Number <span style="color: var(--red);">*</span></label>
+                        <input type="tel" id="reg-phone" placeholder="+91 98765 43210" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-password">Password <span style="color: var(--red);">*</span></label>
+                        <div class="password-wrapper">
+                            <input type="password" id="reg-password" placeholder="Create a strong password (min 6 chars)" required aria-required="true">
+                            <button type="button" class="toggle-pass-btn" id="toggle-reg-password">👁️ Show</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-confirm-password">Confirm Password <span style="color: var(--red);">*</span></label>
+                        <input type="password" id="reg-confirm-password" placeholder="Re-enter your password" required aria-required="true">
+                    </div>
+
+                    <div class="form-group" style="display: flex; align-items: flex-start; gap: 8px;">
+                        <input type="checkbox" id="reg-terms" required style="width: auto; margin-top: 3px;">
+                        <label for="reg-terms" style="font-size: 12px; font-weight: normal; color: var(--muted);">
+                            I agree to the <a href="javascript:void(0)" style="color: var(--purple); text-decoration: underline;">Terms &amp; Conditions</a> and Privacy Policy.
+                        </label>
+                    </div>
+
+                    <div id="reg-feedback" style="font-size: 12px; margin-bottom: 12px;" aria-live="polite"></div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 14px; margin-top: 4px;">
+                        Create Account
+                    </button>
+                </form>
+
+                <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); text-align: center; font-size: 13px; color: var(--muted);">
+                    Already have an account? <a href="./Login.html" style="color: var(--purple); font-weight: 700;">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div>
+            <strong>ThinkMart India</strong> • Academic E-Commerce Project Demo
+        </div>
+        <div>
+            © 2026 ThinkMart. Built with HTML5, CSS3, &amp; Vanilla JavaScript.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/products.js"></script>
+    <script src="../scripts/cart.js"></script>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

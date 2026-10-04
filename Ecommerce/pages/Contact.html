@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ThinkMart Support</title>
+    <meta name="description" content="Have questions about products, shipping, or orders? Get in touch with the ThinkMart customer service team.">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/075/744/712/small_2x/mart-shopping-cart-logo-with-price-tag-and-shopping-trolley-icon-combination-white-icon-on-purple-background-retail-store-branding-online-shopping-business-logo-vector.jpg">
+    <link rel="stylesheet" href="../style/site.css">
+</head>
+
+<body>
+
+    <!-- Demo Notice Top Banner -->
+    <div class="demo-banner">
+        <strong>FRONTEND DEMO</strong> Static College Project • Contact form submission is simulated.
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <a href="./Home-Page.html" class="brand" aria-label="ThinkMart Home Page">
+            <div class="brand-mark">T</div>
+            <div>
+                Think<span class="brand-accent">Mart</span>
+                <small>INDIAN TECH STORE</small>
+            </div>
+        </a>
+
+        <form class="header-search-form" aria-label="Search Products">
+            <input type="search" placeholder="Search electronics, laptops, phones..." aria-label="Search">
+            <button type="submit" aria-label="Submit Search">🔍</button>
+        </form>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+            <a href="./Home-Page.html">Home</a>
+            <a href="./Products.html">Products</a>
+            <a href="./Cart.html">Cart <span class="cart-count">0</span></a>
+            <a href="./About.html">About</a>
+            <a href="./Contact.html" class="active">Contact</a>
+            <a href="./Login.html" class="nav-login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Contact Content -->
+    <main class="page-wrap">
+        <div class="page-heading compact-heading">
+            <p class="eyebrow">WE ARE HERE TO HELP</p>
+            <h1>Get in Touch <span>With Us</span></h1>
+            <p>Have inquiries regarding product specs, order status, or support? Send us a message below.</p>
+        </div>
+
+        <div class="contact-layout">
+            <!-- Left Column: Contact Details -->
+            <div class="contact-info">
+                <h2>Let's Start a Conversation</h2>
+                <p class="contact-intro">Our support representatives are ready to assist you with sales inquiries and technical guidance.</p>
+
+                <div class="contact-detail">
+                    <div class="detail-icon">📍</div>
+                    <div>
+                        <small>HEAD OFFICE</small>
+                        <p>ThinkMart Tech Park, Outer Ring Road, Bellandur, Bengaluru, Karnataka 560103</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="detail-icon">📞</div>
+                    <div>
+                        <small>CUSTOMER HELPLINE</small>
+                        <p><a href="tel:18001234567">+91 1800-123-4567</a> (Toll Free)</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="detail-icon">✉️</div>
+                    <div>
+                        <small>EMAIL SUPPORT</small>
+                        <p><a href="mailto:support@thinkmart.demo">support@thinkmart.demo</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="detail-icon">⏰</div>
+                    <div>
+                        <small>BUSINESS HOURS</small>
+                        <p>Mon – Sat: 9:00 AM – 8:00 PM IST</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <span>CONNECT WITH US:</span>
+                    <a href="javascript:void(0)" title="Twitter / X" aria-label="Twitter">𝕏</a>
+                    <a href="javascript:void(0)" title="LinkedIn" aria-label="LinkedIn">in</a>
+                    <a href="javascript:void(0)" title="Instagram" aria-label="Instagram">IG</a>
+                    <a href="javascript:void(0)" title="Facebook" aria-label="Facebook">fb</a>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive Form -->
+            <div class="contact-form-card">
+                <h2>Send Us a Message</h2>
+                <p>Fill out the form below and our team will get back to you promptly.</p>
+
+                <form id="contact-form" novalidate>
+                    <div class="form-row">
+                        <label for="contact-name">Your Full Name <span style="color: var(--red);">*</span></label>
+                        <input type="text" id="contact-name" placeholder="e.g. Ramesh Kumar" required aria-required="true">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contact-email">Email Address <span style="color: var(--red);">*</span></label>
+                        <input type="email" id="contact-email" placeholder="ramesh@example.com" required aria-required="true">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contact-subject">Inquiry Subject <span style="color: var(--red);">*</span></label>
+                        <select id="contact-subject" required aria-required="true">
+                            <option value="">Select a subject...</option>
+                            <option value="Product Spec Inquiry">Product Spec Inquiry</option>
+                            <option value="Order Tracking">Order &amp; Delivery Tracking</option>
+                            <option value="Returns & Refunds">Returns &amp; Refunds</option>
+                            <option value="Warranty Claim">Warranty &amp; Service Claim</option>
+                            <option value="General Feedback">General Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 7px;">
+                            <label for="contact-message" style="margin-bottom: 0;">Your Message <span style="color: var(--red);">*</span></label>
+                            <span id="char-count" style="font-size: 11px; color: var(--muted);">0 / 500 characters</span>
+                        </div>
+                        <textarea id="contact-message" rows="4" maxlength="500" placeholder="Type your message or query here..." required aria-required="true"></textarea>
+                    </div>
+
+                    <div id="contact-feedback" class="form-feedback" aria-live="polite"></div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 13px; font-size: 14px; margin-top: 12px;">
+                        Send Message ✉️
+                    </button>
+                    <span class="form-disclaimer">Notice: This is a static frontend demo. Submitted data is validated locally in your browser.</span>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div>
+            <strong>ThinkMart India</strong> • Academic E-Commerce Project Demo
+        </div>
+        <div>
+            <a href="./Home-Page.html" style="margin-right: 12px;">Home</a>
+            <a href="./Products.html" style="margin-right: 12px;">Products</a>
+            <a href="./Cart.html" style="margin-right: 12px;">Cart</a>
+            <a href="./About.html" style="margin-right: 12px;">About</a>
+            <a href="./Contact.html">Contact</a>
+        </div>
+        <div>
+            © 2026 ThinkMart. Built with HTML5, CSS3, &amp; Vanilla JavaScript.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/products.js"></script>
+    <script src="../scripts/cart.js"></script>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

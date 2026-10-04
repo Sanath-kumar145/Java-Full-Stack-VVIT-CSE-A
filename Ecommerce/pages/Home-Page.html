@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkMart - India's Premier Online Tech Store</title>
+    <meta name="description" content="Discover India's top tech gadgets, laptops, smartphones, audio devices, and accessories at ThinkMart. Enjoy fast delivery and great discounts.">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/075/744/712/small_2x/mart-shopping-cart-logo-with-price-tag-and-shopping-trolley-icon-combination-white-icon-on-purple-background-retail-store-branding-online-shopping-business-logo-vector.jpg">
+    <link rel="stylesheet" href="../style/site.css">
+</head>
+
+<body>
+
+    <!-- Demo Notice Top Banner -->
+    <div class="demo-banner">
+        <strong>FESTIVE TECH SALE</strong> Up to 30% Off top brand laptops, smartphones &amp; audio gear! • Academic Demo
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <a href="./Home-Page.html" class="brand" aria-label="ThinkMart Home Page">
+            <div class="brand-mark">T</div>
+            <div>
+                Think<span class="brand-accent">Mart</span>
+                <small>INDIAN TECH STORE</small>
+            </div>
+        </a>
+
+        <form class="header-search-form" aria-label="Search Products">
+            <input type="search" placeholder="Search electronics, laptops, phones..." aria-label="Search">
+            <button type="submit" aria-label="Submit Search">🔍</button>
+        </form>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+            <a href="./Home-Page.html" class="active">Home</a>
+            <a href="./Products.html">Products</a>
+            <a href="./Cart.html">Cart <span class="cart-count">0</span></a>
+            <a href="./About.html">About</a>
+            <a href="./Contact.html">Contact</a>
+            <a href="./Login.html" class="nav-login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Home Landing Page -->
+    <main class="page-wrap">
+
+        <!-- Hero Banner Section -->
+        <section class="hero-home" aria-labelledby="hero-heading">
+            <div>
+                <p class="eyebrow">✨ NEXT-GEN SHOPPING EXPERIENCE</p>
+                <h1 id="hero-heading">Upgrade Your Tech Lifestyle with <span>ThinkMart</span></h1>
+                <p>Explore authentic gadgets, flagship smartphones, powerful laptops, and premium audio with verified warranties and express pan-India delivery.</p>
+                <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                    <a href="./Products.html" class="btn btn-primary" style="padding: 14px 26px; font-size: 15px;">
+                        🛍️ Shop All Products
+                    </a>
+                    <a href="./Products.html?category=Laptops" class="btn btn-light" style="padding: 14px 24px; font-size: 15px;">
+                        💻 Explore Laptops
+                    </a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                💻📱🎧
+            </div>
+        </section>
+
+        <!-- Trust Benefits Strip -->
+        <section class="home-benefits" aria-label="Customer Benefits">
+            <div class="benefit">
+                <div class="benefit-icon">🚀</div>
+                <div>
+                    <strong>Free Shipping</strong>
+                    <p>On all orders above ₹999 across India</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🛡️</div>
+                <div>
+                    <strong>100% Genuine</strong>
+                    <p>Official brand warranty &amp; tax invoice</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🔄</div>
+                <div>
+                    <strong>7-Day Easy Return</strong>
+                    <p>No-questions-asked replacement policy</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🎧</div>
+                <div>
+                    <strong>24/7 Expert Support</strong>
+                    <p>Dedicated customer service helpline</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section style="margin-bottom: 70px;" aria-labelledby="categories-heading">
+            <div style="text-align: center; margin-bottom: 32px;">
+                <p class="eyebrow">BROWSE CATALOGUE</p>
+                <h2 id="categories-heading" style="font-size: 32px;">Shop by Category</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px;">
+                <a href="./Products.html?category=Laptops" class="stat-card" style="text-align: center; transition: all 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <div style="font-size: 42px; margin-bottom: 8px;">💻</div>
+                    <strong style="font-size: 18px; color: var(--ink);">Laptops</strong>
+                    <span style="font-size: 13px; color: var(--muted);">High Performance &amp; Gaming</span>
+                </a>
+                <a href="./Products.html?category=Smartphones" class="stat-card" style="text-align: center; transition: all 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <div style="font-size: 42px; margin-bottom: 8px;">📱</div>
+                    <strong style="font-size: 18px; color: var(--ink);">Smartphones</strong>
+                    <span style="font-size: 13px; color: var(--muted);">5G Flagships &amp; Budget</span>
+                </a>
+                <a href="./Products.html?category=Watches" class="stat-card" style="text-align: center; transition: all 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <div style="font-size: 42px; margin-bottom: 8px;">⌚</div>
+                    <strong style="font-size: 18px; color: var(--ink);">Smartwatches</strong>
+                    <span style="font-size: 13px; color: var(--muted);">Fitness &amp; Health Trackers</span>
+                </a>
+                <a href="./Products.html?category=Headphones" class="stat-card" style="text-align: center; transition: all 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <div style="font-size: 42px; margin-bottom: 8px;">🎧</div>
+                    <strong style="font-size: 18px; color: var(--ink);">Headphones</strong>
+                    <span style="font-size: 13px; color: var(--muted);">Wireless &amp; ANC Audio</span>
+                </a>
+                <a href="./Products.html?category=Accessories" class="stat-card" style="text-align: center; transition: all 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <div style="font-size: 42px; margin-bottom: 8px;">🔌</div>
+                    <strong style="font-size: 18px; color: var(--ink);">Accessories</strong>
+                    <span style="font-size: 13px; color: var(--muted);">Power Banks, Mice &amp; Cables</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section style="margin-bottom: 70px;" aria-labelledby="featured-heading">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; flex-wrap: wrap; gap: 12px;">
+                <div>
+                    <p class="eyebrow">HANDPICKED FOR YOU</p>
+                    <h2 id="featured-heading" style="font-size: 32px;">Featured Products</h2>
+                </div>
+                <a href="./Products.html" style="color: var(--purple); font-weight: 700; font-size: 14px;">
+                    View All 12+ Products →
+                </a>
+            </div>
+
+            <!-- Dynamic Featured Grid rendered by app.js -->
+            <div id="home-featured-products" class="product-grid">
+                <!-- Fallback statically pre-rendered card for SEO and instant render -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="discount">18% OFF</span>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80" alt="ThinkBook Pro 15 Laptop">
+                    </div>
+                    <div class="product-info">
+                        <div class="category">THINKMART • LAPTOPS</div>
+                        <h2>ThinkBook Pro 15 Laptop</h2>
+                        <div class="rating">★ 4.8 <span>(142)</span></div>
+                        <div class="price-row">
+                            <strong>₹64,990</strong>
+                            <del>₹79,990</del>
+                        </div>
+                        <button type="button" class="btn btn-primary add-to-cart-btn" data-id="tm-laptop-01">🛒 Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Promotional Festive Banner -->
+        <section style="background: linear-gradient(135deg, #172033 0%, #2a3754 100%); color: white; border-radius: 24px; padding: 48px max(6vw, 24px); margin-bottom: 70px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 30px; align-items: center;" aria-label="Festive Banner">
+            <div>
+                <span style="background: rgba(104, 85, 232, 0.3); color: #a78bfa; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 800; letter-spacing: 0.1em;">
+                    LIMITED TIME OFFER
+                </span>
+                <h2 style="font-size: clamp(28px, 4vw, 42px); margin: 14px 0;">Festive Tech Celebration Sale</h2>
+                <p style="color: #cbd5e1; max-width: 480px; margin-bottom: 24px;">Get instant HDFC &amp; ICICI bank discounts up to ₹5,000 + No-Cost EMI options on premium smartphones and laptops.</p>
+                <a href="./Products.html" class="btn btn-primary" style="padding: 14px 28px; font-size: 15px;">
+                    Claim Festive Deals Now
+                </a>
+            </div>
+            <div style="text-align: center; font-size: 100px;" aria-hidden="true">
+                🎁⚡
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div>
+            <strong>ThinkMart India</strong> • Academic E-Commerce Project Demo
+        </div>
+        <div>
+            <a href="./Home-Page.html" style="margin-right: 12px;">Home</a>
+            <a href="./Products.html" style="margin-right: 12px;">Products</a>
+            <a href="./Cart.html" style="margin-right: 12px;">Cart</a>
+            <a href="./About.html" style="margin-right: 12px;">About</a>
+            <a href="./Contact.html">Contact</a>
+        </div>
+        <div>
+            © 2026 ThinkMart. Built with HTML5, CSS3, &amp; Vanilla JavaScript.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/products.js"></script>
+    <script src="../scripts/cart.js"></script>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

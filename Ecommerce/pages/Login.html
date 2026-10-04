@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ThinkMart Online Shopping</title>
+    <meta name="description" content="Sign in to your ThinkMart account to access exclusive deals, cart items, and order history.">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/075/744/712/small_2x/mart-shopping-cart-logo-with-price-tag-and-shopping-trolley-icon-combination-white-icon-on-purple-background-retail-store-branding-online-shopping-business-logo-vector.jpg">
+    <link rel="stylesheet" href="../style/site.css">
+</head>
+
+<body>
+
+    <!-- Demo Notice Top Banner -->
+    <div class="demo-banner">
+        <strong>FRONTEND DEMO</strong> Static College Project • Authentication is simulated for display only.
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <a href="./Home-Page.html" class="brand" aria-label="ThinkMart Home Page">
+            <div class="brand-mark">T</div>
+            <div>
+                Think<span class="brand-accent">Mart</span>
+                <small>INDIAN TECH STORE</small>
+            </div>
+        </a>
+
+        <form class="header-search-form" aria-label="Search Products">
+            <input type="search" placeholder="Search electronics, laptops, phones..." aria-label="Search">
+            <button type="submit" aria-label="Submit Search">🔍</button>
+        </form>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+            <a href="./Home-Page.html">Home</a>
+            <a href="./Products.html">Products</a>
+            <a href="./Cart.html">Cart <span class="cart-count">0</span></a>
+            <a href="./About.html">About</a>
+            <a href="./Contact.html">Contact</a>
+            <a href="./Login.html" class="nav-login active">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Login Section -->
+    <main class="page-wrap" style="display: grid; place-items: center;">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div style="text-align: center; margin-bottom: 24px;">
+                    <div class="brand-mark" style="margin: 0 auto 12px; width: 50px; height: 50px; font-size: 26px;">T</div>
+                    <h1 style="font-size: 26px; font-weight: 800;">Welcome Back</h1>
+                    <p style="color: var(--muted); font-size: 13px; margin-top: 4px;">Sign in to continue shopping on ThinkMart</p>
+                </div>
+
+                <form id="thinkmart-login-form" novalidate>
+                    <div class="form-group">
+                        <label for="login-email">Email or Username <span style="color: var(--red);">*</span></label>
+                        <input type="email" id="login-email" placeholder="name@example.com" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password <span style="color: var(--red);">*</span></label>
+                        <div class="password-wrapper">
+                            <input type="password" id="login-password" placeholder="Enter your password" required aria-required="true">
+                            <button type="button" class="toggle-pass-btn" id="toggle-login-password">👁️ Show</button>
+                        </div>
+                    </div>
+
+                    <div id="login-feedback" style="font-size: 12px; margin-bottom: 12px;" aria-live="polite"></div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 14px; margin-top: 6px;">
+                        Sign In to Account
+                    </button>
+                </form>
+
+                <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); text-align: center; font-size: 13px; color: var(--muted);">
+                    Don't have an account? <a href="./Register-Page.html" style="color: var(--purple); font-weight: 700;">Create Account</a>
+                </div>
+
+                <div style="margin-top: 14px; text-align: center;">
+                    <a href="./Home-Page.html" style="font-size: 12px; color: var(--muted); text-decoration: underline;">
+                        ← Continue Shopping as Guest
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div>
+            <strong>ThinkMart India</strong> • Academic E-Commerce Project Demo
+        </div>
+        <div>
+            © 2026 ThinkMart. Built with HTML5, CSS3, &amp; Vanilla JavaScript.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/products.js"></script>
+    <script src="../scripts/cart.js"></script>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>
