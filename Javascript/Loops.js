@@ -1,66 +1,55 @@
-for(let i=0;i<=10;i++){
-    console.log('***********************');
-    console.log();
-    console.log('***********************');
-}
+let arr=[10,20,30,40,50,60];
+let str="Javascript";
 
-let arr=[10,20,30,40];
-let str = "Javascript";
-//for of loop
-for( let val of arr){
-    console.log(val);
+//for-of loop 
+for(let val of arr){
+    console.log(val)
 }
 
 for(let ch of str){
     console.log(ch);
 }
 
-//for in loop
-for( let ind in arr){
-    console.log(ind);
+//for-in  loop
+for(let  ind in arr){
+    console.log(ind)
 }
 
 for(let ind in str){
     console.log(ind);
 }
 
-//foreach loop
+//forEach loop
 arr.forEach((val,ind,a)=>{
-    console.log(val,"->",ind,"->",a);
+    console.log(val,"-> ",ind,"->",a);
 })
 
-console.log("============Map functions=============");
-let prices=[100,102,2456,345,898,3435,987,234567];
+
+console.log("==================MAP Function==================");
+let prices=[500,102,456,7812,1542,4512,510,12,741,41,54841];
 console.log(prices);
-let discountedprices=prices.map((x)=>{
-    // console.log(x);
+
+let discountedPrices=prices.map((x)=>{
     return x-x/10;
 })
-console.log(discountedprices);
+console.log(discountedPrices);
 
-// let Additionalprices=prices.map((x)=>{
-//     // console.log(x);
-//     return x+250;
-// })
-// console.log(Additionalprices);
 let addedExtraAmount=prices.map((z)=>{
     return z+250;
 })
 console.log(addedExtraAmount);
 
-console.log("============Filter functions=============");
-let filteredPrices = prices.filter((x)=>{
-    return x<5000 && x>500
+console.log("==================FILTER Function==================");
+let filteredPrices=discountedPrices.filter((x)=>{
+    return x>=500&&x<=5000;
 })
 console.log(filteredPrices);
 
-console.log("============Reduce functions=============");
 
-// filteredPrices.reduce((pre,curval,curind,a)=>{
-//     console.log(pre,"->",curval,"->",curind,"->",a);
-// })
+console.log("==================Reduce Function==================");
 
-const totalprices=filteredPrices.reduce((ar1,val)=>{
-    return ar1+val;
-})
-console.log(totalprices);
+const totalPrice=filteredPrices.reduce((acl , val)=>{
+   return acl+val 
+},500)
+
+console.log(totalPrice);

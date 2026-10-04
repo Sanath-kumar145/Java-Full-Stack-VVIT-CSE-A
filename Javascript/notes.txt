@@ -81,56 +81,66 @@ DataTypes:
                 --------------------------
                     1. literal way 
                     2. using new keyword (object)
-                    Loops:
-                    ------
-                        1.for loop
-                        2.while loop
-                        3.do while loop
-                        4.for of loop   (Arrays / strings) ->only value
-                        5.for in loop   (Arrays / strings) ->only index's
-                        6.foreach loop
+
+                    Loops : 
+                    -------
+                        1. for loop 
+                        2. while loop 
+                        3. do while loop 
+                        4. for-of loop (arrays / strings) ->only values
+                        5. for-in loop (arrays / strings) ->only index's 
+                        6. forEach loop 
 
 
-                        7.map()
-                        8.filter()
-                        9.reduce()
+                        7. map()
+                        8. filter()
+                        9. reduce()
 
 
 
             ii.Objects
-                ->Objects are the real time entities used to store data in the form of key and value pair
+                ->Objects are the real time entities used to store data in the from key and value pair  
                 In JS Objects Declaration : 
                 --------------------------
-                    1. literal way
-                           Syntax:
-                                 VariableType variableName={
-                                          key1:Value;
-                                          key2:value
-                                  }
+                    1. literal way 
+                            Syntax: 
+                                    variableType variableName={
+                                                    key1:value,
+                                                    key2:value 
+                                                }
+
+
                     2. using new keyword (object)
-                            Syntax:
-                                    variableType variableName= new {
+                            Syntax: 
+                                    variableType variableName=new Object({
+                                                    key1:value,
+                                                    key2:value 
+                                                })
 
-                                    }
             iii.functions
-                ->functions are the block of statements which  will get excute when ever it called
+                ->functions are the block of statements which will get execute when ever it called 
 
-                Notes:
-                    ->using functions we can perform Code reusability
-                    ->and also increase Code redability
-            Types:
+                Notes: 
+                    ->Using functions we can perform Code reusability
+                    ->And Also increase Code readability 
+
+            Types: 
             -------
-                1.User Define functions
-                2.Predefine functions
-    In Js we can Declare function in many ways (classification)
-    -------------------------------------------------------------
-        1.Anonymous function
-        2.normal/named function
-        3.functional expression
-        4.first class function
-        5.immediate invoking function(Iif)/ self calling function
-        6.Arrow function
-        7.nested function
-        8.higher order function
-        9.callback function
-        10.generator function
+                1. User Define functions 
+                2. Predefine functions 
+
+    In Js we can Declare  functions  in many ways(classifications)
+    ---------------------------------------------------------------
+        1. Anonymous function
+        2. normal/named function
+        3. functional expression
+        4. first class function
+        5. immediate invoking function(IIF) / self calling function
+        6. Arrow function (ES6 )
+        7. Nested functions 
+        8. higher order function
+        9. callback function
+        10. generator function
+        
+
+

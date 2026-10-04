@@ -35,12 +35,13 @@ arr1.splice(2,0 ,true , null , 5000); //Inserts new elements at the start of an 
 console.log(arr1);
 
 
-arr1.splice(1,5,"java");
+
+arr1.splice(1,5,"Java");
 console.log(arr1);
 
-console.log(arr1.reverse());
 
 arr1.reverse()
 console.log(arr1);
 arr1.sort()
 console.log(arr1);
+

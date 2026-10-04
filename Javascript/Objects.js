@@ -1,61 +1,56 @@
-//literal way
-
+//literal way 
 let empDetails={
     name:"sai kumar",
     role:"developer",
     salary:250000,
-    skills:["System design","microservice","monolithic Architechture","Even driven"],
+    skills:["System design","Microservices","Monolithic Architecture", "Even driven","Database Design"], 
     address:{
         city:"Guntur",
-        zipcode:534245
+        zipCode:541245
     }
 }
 console.log(empDetails);
 
-//using new Keyword
-let emp2=new Object({
-    name:"sai kumar",
-    role:"developer",
-    salary:250000,
-    skills:["System design","microservice","monolithic Architechture","Even driven"],
-    address:{
-        city:"Guntur",
-        zipcode:534245
-    }
-})
+//using new keyword
+let emp2=new Object({name:"ravi",role:"Test Engineer"})
 console.log(emp2);
 
-//CRUD operations
-console.log("============CRUD========================");
+//CRUD Operation
+console.log("--------CRUD Operation------------------");
 console.log(empDetails.name);
 console.log(empDetails.skills[1]);
-
+//print skills using map function
 empDetails.skills.map((s)=>{
     console.log(s);
 })
 
 console.log(empDetails.address);
-console.log(empDetails.address.city.charAt(4));
+
 
 // Object.seal(empDetails)
-//Object.freeze(empDetails)
+// Object.freeze(empDetails)
 console.log(Object.isFrozen(empDetails));
 console.log(Object.isSealed(empDetails));
 
-
 empDetails.email="ravi@tcs.com"
-empDetails.phoneno = 98765432
+empDetails.phone=9874561230
 
-delete empDetails.skills
-delete empDetails.name
+delete empDetails.skills;
+delete empDetails.name;
 empDetails.salary=150000
+
 console.log(empDetails);
 
-//Object inbuild functions
-console.log("=====================Object Inbuilt functions===================");
-// console.log(Object.keys(empDetails));
-// console.log(Object.values(empDetails));
-// console.log(Object.entries(empDetails));
+//Object Inbuilt Function
+console.log("**************Object Inbuilt Function*********************");
 
-// Object.seal()
+console.log(Object.keys(empDetails));
+console.log(Object.values(empDetails));
+console.log(Object.entries(empDetails));
+
+
+
+
+
+
 
