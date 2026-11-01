@@ -1,0 +1,13 @@
+#!/bin/sh
+# ----------------------------------------------------------------------------
+# Maven Wrapper Script for Unix
+# ----------------------------------------------------------------------------
+
+if [ -z "$JAVA_HOME" ] ; then
+  if [ -d "/usr/lib/jvm/java-17-openjdk" ] ; then
+    export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
+  fi
+fi
+
+exec mvn "$@"
+
